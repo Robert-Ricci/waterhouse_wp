@@ -26,17 +26,21 @@ if ( is_front_page() ) {
 
 			<div class="col-md-12 content-area" id="primary">
 				<h1><?php the_field('home_title') ?></h1>
+			</div>
+		</div>
+			<div class="row">
 				<img src="<?php the_field('home_image') ?>" />
-				<p><?php the_field('home_copy') ?></p>
-				
+			</div>	
 
+			<div class="row">
+				<p><?php the_field('home_copy') ?></p>
 			</div><!-- #primary -->
 
 		</div><!-- .row end -->
 
 	</div><!-- #content -->
 
-</div><!-- #full-width-page-wrapper -->
+
 
 <?php
 get_footer();
